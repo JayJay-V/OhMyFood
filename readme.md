@@ -1,1 +1,1 @@
-# readme projet 4 - la mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.
+## Projet 4 - La mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.
