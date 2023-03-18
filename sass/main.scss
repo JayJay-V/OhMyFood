@@ -1,2 +1,21 @@
+/* UTILS */
 @import "./utils/variables";
 @import "./utils/mixins";
+
+/* BASE */
+@import "./base/base";
+@import "./base/typography";
+
+/* COMPONENTS */
+@import "./components/buttons";
+
+/* LAYOUTS */
+@import "./layouts/loader";
+@import "./layouts/header";
+@import "./layouts/containers";
+@import "./layouts/form";
+@import "./layouts/navs";
+@import "./layouts/footer";
+
+/* PAGES */
+@import "./pages/step";
