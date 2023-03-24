@@ -17,7 +17,7 @@
         
         <!-- START OF PAGE -->
         <header>
-            <nav>
+            <nav class="homepage">
                 <a href="index.html" class="logo_omf_top"> <!-- "omf" abbreviation OhMyFood -->
                     <img src="./Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo_OhMyFood">
                 </a>
@@ -26,22 +26,27 @@
 
         <main>
             <!-- POSITION -->
-            <form id="location">
-                <!-- ICON_WITH_LOCALISATION: "Paris,Belleville" -->
-                <i class="fa-solid fa-location-dot"></i>
-            </form>
+            <section id="location">
+                <div class="location_container">
+                    <!-- ICON_WITH_LOCALISATION: "Paris,Belleville" -->
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Paris, Belleville</p>
+                </div>
+            </section>
             
             <!-- BOOKING -->
             <section id="reservation">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-                <!-- BUTTON EXPLORER -->
-                <button class="favorite styled" type="button">Explorer nos restaurants</button>
+                <div class="reservation_container">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
+                    <!-- BUTTON EXPLORER -->
+                    <button class="favorite styled" type="button">Explorer nos restaurants</button>
+                </div>
             </section>
             
             <!--HOW IT WORKS-->
             <section id="functioning">
-                <div class="functioning_step">
+                <div class="functioning_container">
                     <div class="title_functioning">
                         <h2>Fonctionnement</h2>
                     </div>
@@ -65,7 +70,7 @@
             
             <!--EATERY-->
             <section id="restaurants">
-                <nav class="all_restaurants">
+                <div class="restaurants_container">
                     <div class="title_restaurants">
                         <h2>Restaurants</h2> 
                     </div>
@@ -117,7 +122,7 @@
                             </div>
                         </a>
                     </article>
-                </nav>
+                </div>
             </section>
         </main>
 
