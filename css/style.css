@@ -1,2 +1,41 @@
+/* UTILS */
+/* BASE */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: auto;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+/* COMPONENTS */
+/* LAYOUTS */
+nav {
+  background-color: #9356DC;
+  width: 100%;
+  height: 63px;
+}
+
+.logo_omf_top {
+  width: 162px;
+  height: 44px;
+}
+
+.img_all {
+  width: 100%;
+}
+
+/* PAGES */
 
 /*# sourceMappingURL=style.css.map */
