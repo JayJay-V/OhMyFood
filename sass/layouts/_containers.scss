@@ -42,14 +42,15 @@
     }
 }
 
-.restaurants_container {
+.restaurants {
+    &__container {
     height: 1225px;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
     background-color: $greylight;
-
-    .title_restaurants {
+    }
+    &__title {
         padding-top: 55px;
     }
 }

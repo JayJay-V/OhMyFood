@@ -80,14 +80,14 @@ a:visited {
   margin-top: 48px;
 }
 
-.restaurants_container {
+.restaurants__container {
   height: 1225px;
   padding-left: 5%;
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
 }
-.restaurants_container .title_restaurants {
+.restaurants__title {
   padding-top: 55px;
 }
 
@@ -112,11 +112,12 @@ a:visited {
 
 /* PAGES */
 .step {
-  width: 95%;
+  width: 92%;
   height: 72px;
   display: flex;
   align-items: center;
   margin-top: 25px;
+  margin-left: 3%;
   border-radius: 20px;
   background-color: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -127,14 +128,15 @@ a:visited {
 .step:active .fa-solid {
   color: #9356DC;
 }
-.step .fa-circle {
+
+.fa-circle {
   color: #9356DC;
   font-size: 24px;
   position: absolute;
   z-index: 1;
-  left: 2%; /*A MODIFIER DES LE RETOUR*/
+  left: 5%;
 }
-.step .fa-circle .number_step {
+.fa-circle__number {
   font-size: 14px;
   position: absolute;
   z-index: 2;
@@ -142,9 +144,10 @@ a:visited {
   right: 8px;
   color: #FFFFFF;
 }
-.step .fa-mobile-screen-button,
-.step .fa-list,
-.step .fa-store {
+
+.fa-mobile-screen-button,
+.fa-list,
+.fa-store {
   padding-left: 9%;
   padding-right: 7%;
   color: #7E7E7E;
