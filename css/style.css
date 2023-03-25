@@ -33,6 +33,7 @@ a:visited {
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
+  /* after for "Version Desktop" -> add :HOVER */
 }
 .button_all .styled:active {
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -71,6 +72,14 @@ a:visited {
   text-align: center;
 }
 
+.functioning_container {
+  height: 440px;
+  margin-left: 5%;
+}
+.functioning_container .title_functioning {
+  margin-top: 48px;
+}
+
 header {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -93,5 +102,43 @@ header {
 }
 
 /* PAGES */
+.step {
+  width: 85%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  border-radius: 20px;
+  background-color: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.step:active {
+  background-color: #F5EDFF;
+}
+.step:active .fa-solid {
+  color: #9356DC;
+}
+.step .fa-circle {
+  color: #9356DC;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+  left: 2%; /*A MODIFIER DES LE RETOUR*/
+}
+.step .fa-circle .number_step {
+  font-size: 14px;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  right: 8px;
+  color: #FFFFFF;
+}
+.step .fa-mobile-screen-button,
+.step .fa-list,
+.step .fa-store {
+  padding-left: 9%;
+  padding-right: 7%;
+  color: #7E7E7E;
+}
 
 /*# sourceMappingURL=style.css.map */

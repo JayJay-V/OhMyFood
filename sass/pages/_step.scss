@@ -1,0 +1,41 @@
+.step {
+    width: 85%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: $greylight;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    &:active {
+        background-color: $primarylight; 
+        .fa-solid {
+            color: $primary;
+        }
+    }
+
+    .fa-circle {
+        color: $primary;
+        font-size: 24px;
+        position: absolute;
+        z-index: 1;
+        left: 2%; /*A MODIFIER DES LE RETOUR*/
+
+        .number_step {
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+            top: 5px;
+            right: 8px;
+            color: $white;
+        }
+    }
+
+    .fa-mobile-screen-button, 
+    .fa-list,
+    .fa-store {
+        padding-left: 9%;
+        padding-right: 7%;
+        color: $greystrong;
+    }
+}
