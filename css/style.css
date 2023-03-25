@@ -41,6 +41,19 @@ a:visited {
 }
 
 /* LAYOUTS */
+.homepage {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_omf_top {
+  width: 162px;
+  height: 44px;
+}
+
 .location__container {
   background-color: #EAEAEA;
   height: 50px;
@@ -65,12 +78,6 @@ a:visited {
   text-align: center;
   padding-top: 40px;
 }
-.reservation__about {
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 
 .functioning__container {
   height: 440px;
@@ -89,19 +96,6 @@ a:visited {
 }
 .restaurants__title {
   padding-top: 55px;
-}
-
-.homepage {
-  width: 100%;
-  height: 63px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo_omf_top {
-  width: 162px;
-  height: 44px;
 }
 
 /* IMG card restaurant homepage */
@@ -151,6 +145,13 @@ a:visited {
   padding-left: 9%;
   padding-right: 7%;
   color: #7E7E7E;
+}
+
+.reservation__about {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
