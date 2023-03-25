@@ -33,9 +33,21 @@
 
 .functioning_container {
     height: 440px;
-    margin-left: 5%;
+    padding-left: 5%;
 
     .title_functioning {
         margin-top: 48px;
+    }
+}
+
+.restaurants_container {
+    height: 1225px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: $greylight;
+
+    .title_restaurants {
+        padding-top: 55px;
     }
 }

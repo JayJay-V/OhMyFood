@@ -74,10 +74,21 @@ a:visited {
 
 .functioning_container {
   height: 440px;
-  margin-left: 5%;
+  padding-left: 5%;
 }
 .functioning_container .title_functioning {
   margin-top: 48px;
+}
+
+.restaurants_container {
+  height: 1225px;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+}
+.restaurants_container .title_restaurants {
+  padding-top: 55px;
 }
 
 header {
@@ -97,8 +108,10 @@ header {
   height: 44px;
 }
 
-.img_all {
-  width: 100%;
+/* IMG card restaurant homepage */
+.card img {
+  width: 95%;
+  height: 175px;
 }
 
 /* PAGES */
