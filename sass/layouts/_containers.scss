@@ -1,29 +1,30 @@
-.location_container {
-    background-color: $grey;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-
-    p {
-        font-size: 16px;
-        margin-left: 15px;
+.location {
+    &__container {
+        background-color: $grey;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+        & p {
+            font-size: 16px;
+            margin-left: 15px;
+        }
     }
 }
-.reservation_container {
-    height: 285px;
-    background-color: #F7F7F7;
-    
-     .title_reservation {
+.reservation {
+    &__container {
+        height: 285px;
+        background-color: #F7F7F7;
+    }
+    &__title {
         height: 110px;
         display: flex;
         justify-content: center;
         text-align: center;
         padding-top: 40px;
      }
-
-     .about_reservation {
+    &__about {
         height: 45px;
         display: flex;
         justify-content: center;
@@ -31,11 +32,12 @@
      }
 }
 
-.functioning_container {
+.functioning {
+    &__container {
     height: 440px;
     padding-left: 5%;
-
-    .title_functioning {
+    }
+    &__title {
         margin-top: 48px;
     }
 }

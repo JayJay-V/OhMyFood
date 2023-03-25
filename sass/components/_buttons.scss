@@ -1,8 +1,7 @@
-.button_all {
+.btn {
     display: flex;
     justify-content: center;
-    
-    .styled {
+    &__mainstyled {
         width: 49%;
         height: 50px;
         margin-top: 25px;
