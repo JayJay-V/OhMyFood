@@ -1,0 +1,20 @@
+.card {
+    width: 95%;
+    height: 250px;
+    margin-top: 20px;
+    background-color: $white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    &__info {
+        padding-left: 3%;
+    }
+
+    .fa-heart {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 25px;
+        right: 7%;
+    }
+}
