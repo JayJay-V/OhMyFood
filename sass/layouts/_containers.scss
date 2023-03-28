@@ -37,10 +37,11 @@
 /* ---------- OTHER PAGES! ---------- */
 .menu {
     &__container {
-    background-color: $greylight;
-    border-radius: 40px 40px 0px 0px;
-    height: 1115px;
-    padding-left: 3%;
-    position: relative;
+        @include settings__menu__container;
+        height: 1115px;
+    }
+    &__highcontainer {
+        @include settings__menu__container;
+        height: 1200px;
     }
 }
