@@ -1,3 +1,4 @@
+/* ---------- HOMEPAGE! ---------- */
 .location {
     &__container {
         background-color: $grey;
@@ -39,7 +40,7 @@
 /* ---------- OTHER PAGES! ---------- */
 .menu {
     &__container {
-    background-color: red;
+    background-color: $greylight;
     border-radius: 40px 40px 0px 0px;
     height: 1115px;
     padding-left: 3%;
