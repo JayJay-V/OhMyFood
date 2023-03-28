@@ -1,0 +1,39 @@
+.reservation {
+    &__title {
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+    &__about {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.functioning {
+    &__title {
+        margin-top: 48px;
+    }
+}
+
+.restaurants {
+    &__title {
+        padding-top: 55px;
+    }
+}
+
+.menu {
+    &__title {
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        column-gap: 10%;
+    }
+    &__like {
+        font-size: 22px;
+    }
+}

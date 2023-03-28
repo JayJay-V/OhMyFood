@@ -112,6 +112,29 @@ p {
   height: 285px;
   background-color: #F7F7F7;
 }
+
+.functioning__container {
+  height: 440px;
+  padding-left: 5%;
+}
+
+.restaurants__container {
+  height: 1225px;
+  padding-top: 55px;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+}
+
+/* ---------- OTHER PAGES! ---------- */
+.menu__container {
+  background-color: red;
+  border-radius: 40px 40px 0px 0px;
+  height: 1115px;
+  padding-left: 3%;
+}
+
 .reservation__title {
   height: 110px;
   display: flex;
@@ -126,32 +149,14 @@ p {
   text-align: center;
 }
 
-.functioning__container {
-  height: 440px;
-  padding-left: 5%;
-}
 .functioning__title {
   margin-top: 48px;
 }
 
-.restaurants__container {
-  height: 1225px;
-  padding-left: 5%;
-  display: flex;
-  flex-direction: column;
-  background-color: #F7F7F7;
-}
 .restaurants__title {
   padding-top: 55px;
 }
 
-/* ---------- OTHER PAGES! ---------- */
-.menu {
-  background-color: red;
-  border-radius: 40px 40px 0px 0px;
-  height: 1115px;
-  padding-left: 3%;
-}
 .menu__title {
   padding-top: 32px;
   display: flex;
