@@ -41,6 +41,11 @@ p {
   color: #FFFFFF;
 }
 
+/* ---------- OTHER PAGES! ---------- */
+.menu__title h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 /* COMPONENTS */
 .btn {
   display: flex;
@@ -74,6 +79,22 @@ p {
   height: 44px;
 }
 
+/* ---------- OTHER PAGES! ---------- */
+.page {
+  height: 63px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.page .fa-arrow-left {
+  padding-left: 23px;
+  padding-right: 70px;
+}
+.page .logo_omf_top {
+  width: 162px;
+  height: 44px;
+}
+
 .location__container {
   background-color: #EAEAEA;
   height: 50px;
@@ -98,6 +119,12 @@ p {
   text-align: center;
   padding-top: 40px;
 }
+.reservation__about {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 .functioning__container {
   height: 440px;
@@ -116,6 +143,23 @@ p {
 }
 .restaurants__title {
   padding-top: 55px;
+}
+
+/* ---------- OTHER PAGES! ---------- */
+.menu {
+  background-color: red;
+  border-radius: 40px 40px 0px 0px;
+  height: 1115px;
+  padding-left: 3%;
+}
+.menu__title {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  column-gap: 10%;
+}
+.menu__like {
+  font-size: 22px;
 }
 
 /* IMG card restaurant homepage */
@@ -191,13 +235,6 @@ p {
   color: #7E7E7E;
 }
 
-.reservation__about {
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .card {
   width: 95%;
   height: 250px;
@@ -219,6 +256,7 @@ p {
   position: relative;
   bottom: 30px;
   right: 7%;
+  font-size: 22px;
 }
 .card__like:active {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);

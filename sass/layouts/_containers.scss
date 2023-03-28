@@ -23,7 +23,13 @@
         justify-content: center;
         text-align: center;
         padding-top: 40px;
-     }
+    }
+    &__about {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
 }
 
 .functioning {
@@ -46,5 +52,21 @@
     }
     &__title {
         padding-top: 55px;
+    }
+}
+/* ---------- OTHER PAGES! ---------- */
+.menu {
+    background-color: red;
+    border-radius: 40px 40px 0px 0px;
+    height: 1115px;
+    padding-left: 3%;
+    &__title {
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        column-gap: 10%;
+    }
+    &__like {
+        font-size: 22px;
     }
 }
