@@ -9,12 +9,19 @@
     &__info {
         padding-left: 3%;
     }
+    &__info h3 {
+        padding-top: 15px;
+    }
 
-    .fa-heart {
+    &__like {
         display: flex;
         justify-content: flex-end;
         position: relative;
-        top: 25px;
+        bottom: 30px;;
         right: 7%;
+        &:active {
+            background: linear-gradient(200.64deg, $primary -5.2%, $secondary 110.74%);
+            border: none;
+        }
     }
 }
