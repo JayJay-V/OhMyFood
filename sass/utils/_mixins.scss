@@ -1,0 +1,36 @@
+/* ---------- OTHER PAGES! ---------- */
+@mixin settings__menu__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 42px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid;
+    border-color: $neongreen;
+    width: 40px;
+}
+@mixin settings__menu__choice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 97%;
+    height: 70px;
+    margin-top: 10px;
+    padding-left: 3%;
+    background: $white;
+    border-radius: 15px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+/* ---------- HOMEPAGE and OTHER PAGES! ---------- */
+@mixin settings__btn {
+    width: 49%;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 25px;
+    background:linear-gradient(to top, $primary, $secondary);
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    cursor: pointer;
+}

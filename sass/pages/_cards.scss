@@ -13,7 +13,6 @@
     &__info h3 {
         padding-top: 15px;
     }
-
     &__like {
         display: flex;
         justify-content: flex-end;
@@ -23,6 +22,7 @@
         font-size: 22px;
         &:active {
             background: linear-gradient(200.64deg, $primary -5.2%, $secondary 110.74%);
+            cursor: pointer;
         }
     }
 }

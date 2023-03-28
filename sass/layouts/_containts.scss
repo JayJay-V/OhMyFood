@@ -14,13 +14,11 @@
         text-align: center;
     }
 }
-
 .functioning {
     &__title {
         margin-top: 48px;
     }
 }
-
 .restaurants {
     &__title {
         padding-top: 55px;
@@ -36,5 +34,8 @@
     }
     &__like {
         font-size: 22px;
+    }
+    &__choice {
+        @include settings__menu__choice;
     }
 }
