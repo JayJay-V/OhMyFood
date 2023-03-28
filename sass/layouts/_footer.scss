@@ -1,21 +1,23 @@
 .endpage {
     height: 197px;
-    background-color: red;
+    background-color: $footer;
     padding-top: 22px;
     padding-left: 5%;
-
-    .logo_omf_bot{
-        width: 137px;
-        height: 27px;
+    &__about {
+        color: $white;
+        a:visited {
+            color: $white;
+        }
     }
-
     ul {
         padding-top: 9px;
         padding-inline-start: initial;
     }
-
     li {
         display: flex;
         padding-top: 7px;
+        i {
+            padding-right: 10px;
+        }
     }
 }

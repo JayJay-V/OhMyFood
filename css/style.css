@@ -35,6 +35,12 @@ p {
   font-size: 17px;
 }
 
+.endpage__title p {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
 /* COMPONENTS */
 .btn {
   display: flex;
@@ -120,13 +126,15 @@ p {
 
 .endpage {
   height: 197px;
-  background-color: red;
+  background-color: #353535;
   padding-top: 22px;
   padding-left: 5%;
 }
-.endpage .logo_omf_bot {
-  width: 137px;
-  height: 27px;
+.endpage__about {
+  color: #FFFFFF;
+}
+.endpage__about a:visited {
+  color: #FFFFFF;
 }
 .endpage ul {
   padding-top: 9px;
@@ -135,6 +143,9 @@ p {
 .endpage li {
   display: flex;
   padding-top: 7px;
+}
+.endpage li i {
+  padding-right: 10px;
 }
 
 /* PAGES */

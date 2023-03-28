@@ -26,3 +26,11 @@ h3 {
 p {
     font-size: 17px;
 }
+
+.endpage {
+    &__title p {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 18px;
+        color: $white;
+    }
+}
