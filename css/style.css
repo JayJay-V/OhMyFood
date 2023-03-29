@@ -340,9 +340,21 @@ p {
   right: 7%;
   font-size: 22px;
 }
-.card__like:active {
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+.card__like .anim-heart {
+  display: none;
+}
+.card__like .empty-heart {
+  position: absolute;
+  transition: transform 500ms;
+}
+.card__like .empty-heart:hover {
   cursor: pointer;
+  color: red;
+  transform: scale(1.1);
+}
+.card__like .empty-heart:hover .anim-heart {
+  position: absolute;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
