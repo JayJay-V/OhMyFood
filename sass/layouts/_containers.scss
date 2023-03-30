@@ -1,4 +1,22 @@
-/* ---------- HOMEPAGE! ---------- */
+/*
+ * ----------------------------------------
+ * Loader
+ * ----------------------------------------
+ */
+ .loader__container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    background-color: $greylight;
+}
+/*
+ * ----------------------------------------
+ * Homepage
+ * ----------------------------------------
+ */
 .location {
     &__container {
         background-color: $grey;
@@ -34,7 +52,11 @@
     background-color: $greylight;
     }
 }
-/* ---------- OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
 .menu {
     &__container {
         @include settings__menu__container;

@@ -1,13 +1,45 @@
-/* UTILS */ /* ---------- $COLORS! ---------- */ /* ---------- OTHER PAGES! ---------- */
-/* ---------- HOMEPAGE and OTHER PAGES! ---------- */
+/* UTILS */ /*
+ * ----------------------------------------
+ * Colors
+ * ----------------------------------------
+ */
+/*
+ * ----------------------------------------
+ * Homepage & Other Pages
+ * ----------------------------------------
+ */
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
 /* BASE */
+/*
+ * ----------------------------------------
+ * All
+ * ----------------------------------------
+ */
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
-/* ---------- HOMEPAGE and OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Loader
+ * ----------------------------------------
+ */
+.loader__styled p {
+  font-family: "Shrikhand", sans-serif;
+  font-size: large;
+}
+
+/*
+ * ----------------------------------------
+ * Homepage & Other Pages
+ * ----------------------------------------
+ */
 body {
   margin: auto;
   font-size: 16px;
@@ -44,7 +76,11 @@ p {
   color: #FFFFFF;
 }
 
-/* ---------- OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
 .menu__title h1 {
   font-family: "Shrikhand", sans-serif;
 }
@@ -68,7 +104,11 @@ p {
 }
 
 /* COMPONENTS */
-/* ---------- HOMEPAGE and OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Homepage & Other Pages
+ * ----------------------------------------
+ */
 .btn {
   display: flex;
   justify-content: center;
@@ -82,8 +122,7 @@ p {
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
-  cursor: pointer;
-  /* after for "Version Desktop" -> add :HOVER */
+  cursor: pointer; /* after for "Version Desktop" -> add :HOVER */
 }
 .btn__mainstyled:active {
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -98,48 +137,49 @@ p {
   width: 100%;
   z-index: 999;
   height: 100%;
-  background-color: #9356DC;
+  background-color: #F7F7F7;
 }
 
 .loader__styled {
-  animation: animate 1.5s linear infinite;
-  clip: rect(0, 80px, 80px, 40px);
-  height: 80px;
-  width: 80px;
-  position: absolute;
-  left: calc(50% - 40px);
-  top: calc(50% - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: loader__styled 3s ease-in-out 1s infinite alternate backwards;
 }
 
-@keyframes animate {
+/*
+ * ----------------------------------------
+ * animation loader
+ * ----------------------------------------
+ */
+@-webkit-keyframes loader__styled {
   0% {
-    transform: rotate(0deg);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
   }
   100% {
-    transform: rotate(220deg);
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    opacity: 0;
   }
 }
-.loader__styled:after {
-  animation: animate2 1.5s ease-in-out infinite;
-  clip: rect(0, 80px, 80px, 40px);
-  content: "";
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
-  position: absolute;
-}
-
-@keyframes animate2 {
+@keyframes loader__styled {
   0% {
-    box-shadow: inset #fff 0 0 0 17px;
-    transform: rotate(-140deg);
+    transform: translateZ(0);
+    opacity: 1;
   }
-  50% {
-    box-shadow: inset #fff 0 0 0 2px;
+  60% {
+    opacity: 0.8;
   }
   100% {
-    box-shadow: inset #fff 0 0 0 17px;
-    transform: rotate(140deg);
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    opacity: 0;
   }
 }
 /* ---------- HOMEPAGE! ---------- */
@@ -170,7 +210,26 @@ p {
   height: 44px;
 }
 
-/* ---------- HOMEPAGE! ---------- */
+/*
+ * ----------------------------------------
+ * Loader
+ * ----------------------------------------
+ */
+.loader__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  background-color: #F7F7F7;
+}
+
+/*
+ * ----------------------------------------
+ * Homepage
+ * ----------------------------------------
+ */
 .location__container {
   background-color: #EAEAEA;
   height: 50px;
@@ -202,7 +261,11 @@ p {
   background-color: #F7F7F7;
 }
 
-/* ---------- OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
 .menu__container {
   background-color: #F7F7F7;
   border-radius: 40px 40px 0px 0px;
@@ -308,7 +371,11 @@ p {
 }
 
 /* PAGES */
-/* ---------- HOMEPAGE! ---------- */
+/*
+ * ----------------------------------------
+ * Homepage
+ * ----------------------------------------
+ */
 .step {
   width: 92%;
   height: 72px;
