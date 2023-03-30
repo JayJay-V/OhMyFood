@@ -1,3 +1,18 @@
+/*
+ * ----------------------------------------
+ * active or not Loader
+ * ----------------------------------------
+ */
+.loader {
+  &__container {
+  display: none;
+  }
+}
+/*
+ * ----------------------------------------
+ * styled Loader
+ * ----------------------------------------
+ */
 .loader__styled {
     display: flex;
     justify-content: center;
