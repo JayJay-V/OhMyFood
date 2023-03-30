@@ -44,14 +44,15 @@
             transition: transform 500ms;
             &:hover {
                 cursor: pointer;
-                color: red;
+            }
+            &:active {
+                background-color: red;
                 transform: scale(1.1);
                 .anim-heart {
                     position: absolute;
                     display: block;
-                }
-            }
-        
+                }            
+            }          
         }
     }
 }
