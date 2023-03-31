@@ -22,10 +22,18 @@
     &__title {
         margin-top: 48px;
     }
+    &__step {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .restaurants {
     &__title {
         padding-top: 55px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
     }
 }
 /*

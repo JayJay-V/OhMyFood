@@ -306,9 +306,17 @@ p {
 .functioning__title {
   margin-top: 48px;
 }
+.functioning__step {
+  display: flex;
+  flex-direction: column;
+}
 
 .restaurants__title {
   padding-top: 55px;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
 }
 
 /*
