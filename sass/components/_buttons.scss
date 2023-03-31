@@ -32,7 +32,7 @@
 }
 .anim-heart {
     position: absolute;
-    color: red;
+    color: $secondary;
     opacity: 0;
     &:active {
         transform: scale(1.1);

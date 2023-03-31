@@ -147,7 +147,7 @@ p {
 
 .anim-heart {
   position: absolute;
-  color: red;
+  color: #FF79DA;
   opacity: 0;
 }
 .anim-heart:active {
