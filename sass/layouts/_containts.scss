@@ -1,4 +1,8 @@
-/* ---------- HOMEPAGE! ---------- */
+/*
+ * ----------------------------------------
+ * Homepage
+ * ----------------------------------------
+ */
 .reservation {
     &__title {
         height: 110px;
@@ -24,11 +28,16 @@
         padding-top: 55px;
     }
 }
-/* ---------- OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
 .menu {
     &__title {
         padding-top: 32px;
         display: flex;
+        justify-content: center;
         align-items: center;
         column-gap: 10%;
     }

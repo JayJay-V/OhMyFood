@@ -186,7 +186,11 @@ p {
     opacity: 0;
   }
 }
-/* ---------- HOMEPAGE! ---------- */
+/*
+ * ----------------------------------------
+ * Homepage & Other Pages
+ * ----------------------------------------
+ */
 .homepage {
   height: 63px;
   display: flex;
@@ -198,20 +202,15 @@ p {
   height: 44px;
 }
 
-/* ---------- OTHER PAGES! ---------- */
-.page {
-  height: 63px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.page .fa-arrow-left {
-  padding-left: 23px;
-  padding-right: 70px;
-}
-.page .logo_omf_top {
-  width: 162px;
-  height: 44px;
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
+.back .fa-arrow-left {
+  position: absolute;
+  left: 6%;
+  top: 23px;
 }
 
 /*
@@ -285,7 +284,11 @@ p {
   height: 1200px;
 }
 
-/* ---------- HOMEPAGE! ---------- */
+/*
+ * ----------------------------------------
+ * Homepage
+ * ----------------------------------------
+ */
 .reservation__title {
   height: 110px;
   display: flex;
@@ -308,10 +311,15 @@ p {
   padding-top: 55px;
 }
 
-/* ---------- OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
 .menu__title {
   padding-top: 32px;
   display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: 10%;
 }
@@ -333,13 +341,21 @@ p {
   cursor: pointer;
 }
 
-/* ---------- HOMEPAGE! ---------- */
+/*
+ * ----------------------------------------
+ * Homepage
+ * ----------------------------------------
+ */
 .card img {
   width: 100%;
   height: 175px;
 }
 
-/* ---------- OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Other Pages
+ * ----------------------------------------
+ */
 .background {
   width: 100%;
   height: 200px;
@@ -348,7 +364,11 @@ p {
   width: 100%;
 }
 
-/* ---------- HOMEPAGE and OTHER PAGES! ---------- */
+/*
+ * ----------------------------------------
+ * Homepage & Other Pages
+ * ----------------------------------------
+ */
 .endpage {
   height: 197px;
   background-color: #353535;
