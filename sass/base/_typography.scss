@@ -53,8 +53,8 @@ p {
     &__title h1 {
         font-family: 'Shrikhand', sans-serif;
     }
-    &__subtitle h2 {
-        @include settings__menu__subtitle;
+    &__space h2 {
+        @include settings__menu__space;
     }
     &__choice h3 {
         width: 100%;

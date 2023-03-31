@@ -22,10 +22,9 @@
 @mixin settings__menu__container {
     background-color: $greylight;
     border-radius: 40px 40px 0px 0px;
-    padding-left: 3%;
     position: relative;
 }
-@mixin settings__menu__subtitle {
+@mixin settings__menu__space {
     font-size: 16px;
     font-weight: 300;
     padding-top: 42px;
