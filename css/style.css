@@ -378,6 +378,27 @@ p {
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: transform 330ms ease-in-out;
+}
+.menu__choice:hover .box {
+  transform: translate(-100%, 0);
+  transition: transform 1000ms;
+}
+
+.box {
+  height: 70px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+  background: #99E2D0;
+  position: absolute;
+}
+
+.fa-circle-check {
+  color: white;
+  font-size: 22px;
 }
 
 /*
@@ -401,6 +422,7 @@ p {
 }
 .background .img {
   width: 100%;
+  height: 275px;
 }
 
 /*
