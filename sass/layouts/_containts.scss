@@ -59,13 +59,23 @@
     }
     &__choice {
         @include settings__menu__choice;
-        transition: transform 330ms ease-in-out;
+        /*
+ * ----------------------------------------
+ * EN TEST
+ * ----------------------------------------
+ */
+        transition: transform 330ms ease-in-out; 
         &:hover .box {
             transform: translate(-100%, 0);
             transition: transform 1000ms;
         }
     }    
 }
+/*
+ * ----------------------------------------
+ * EN TEST
+ * ----------------------------------------
+ */
 .box {
     height: 70px;
     width: 60px;
