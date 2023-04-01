@@ -378,13 +378,24 @@ p {
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  /*
+  * ----------------------------------------
+  * EN TEST
+  * ----------------------------------------
+  */
   transition: transform 330ms ease-in-out;
+  transform-origin: right 50%;
 }
 .menu__choice:hover .box {
   transform: translate(-100%, 0);
   transition: transform 1000ms;
 }
 
+/*
+ * ----------------------------------------
+ * EN TEST
+ * ----------------------------------------
+ */
 .box {
   height: 70px;
   width: 60px;
