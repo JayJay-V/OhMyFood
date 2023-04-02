@@ -35,9 +35,9 @@
 }
 @mixin settings__menu__choice {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 97%;
     height: 70px;
     margin-top: 10px;
@@ -46,4 +46,5 @@
     border-radius: 15px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    overflow: hidden;
 }

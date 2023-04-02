@@ -93,14 +93,10 @@ p {
   border-color: #99E2D0;
   width: 40px;
 }
-.menu__choice h3 {
-  width: 100%;
-}
 .menu__choice p {
   font-size: 15px;
   display: flex;
-  width: 95%;
-  justify-content: space-between;
+  column-gap: 100px;
 }
 
 /* COMPONENTS */
@@ -178,7 +174,7 @@ p {
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: loader__styled 3s ease-in-out 1s infinite alternate backwards;
+  animation: loader__styled 3s ease-in-out 1s 5 alternate backwards;
 }
 
 /*
@@ -365,11 +361,18 @@ p {
   align-items: center;
   font-size: 22px;
 }
+.menu__containt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
 .menu__choice {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 97%;
   height: 70px;
   margin-top: 10px;
@@ -378,16 +381,16 @@ p {
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  overflow: hidden;
   /*
   * ----------------------------------------
   * EN TEST
   * ----------------------------------------
   */
   transition: transform 330ms ease-in-out;
-  transform-origin: right 50%;
 }
 .menu__choice:hover .box {
-  transform: translate(-100%, 0);
+  transform: translate(0%, 0);
   transition: transform 1000ms;
 }
 
@@ -404,7 +407,9 @@ p {
   align-items: center;
   border-radius: 0px 15px 15px 0px;
   background: #99E2D0;
-  position: absolute;
+  position: relative;
+  transform: translate(100%, 0);
+  transition: transform 1000ms;
 }
 
 .fa-circle-check {
@@ -495,7 +500,7 @@ p {
   font-size: 24px;
   position: absolute;
   z-index: 1;
-  left: 5%;
+  transform: translateX(-12px);
 }
 .fa-circle__number {
   font-size: 14px;
