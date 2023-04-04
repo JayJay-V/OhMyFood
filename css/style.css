@@ -382,23 +382,18 @@ p {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   overflow: hidden;
+  transition: transform 330ms ease-in-out;
   /*
   * ----------------------------------------
-  * EN TEST
+  * Animation Box
   * ----------------------------------------
   */
-  transition: transform 330ms ease-in-out;
 }
 .menu__choice:hover .box {
   transform: translate(0%, 0);
   transition: transform 1000ms;
 }
 
-/*
- * ----------------------------------------
- * EN TEST
- * ----------------------------------------
- */
 .box {
   height: 70px;
   width: 60px;

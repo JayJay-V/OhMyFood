@@ -66,24 +66,18 @@
     }
     &__choice {
         @include settings__menu__choice;
-        /*
- * ----------------------------------------
- * EN TEST
- * ----------------------------------------
- */
         transition: transform 330ms ease-in-out;
-        
+        /*
+        * ----------------------------------------
+        * Animation Box
+        * ----------------------------------------
+        */       
         &:hover .box {
             transform: translate(0%, 0);
             transition: transform 1000ms;
         }
     }    
 }
-/*
- * ----------------------------------------
- * EN TEST
- * ----------------------------------------
- */
 .box {
     height: 70px;
     width: 60px;
