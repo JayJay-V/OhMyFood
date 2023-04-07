@@ -75,6 +75,10 @@
         &:hover .box {
             transform: translate(0%, 0);
             transition: transform 1000ms;
+            i {
+                transform: rotate(-1turn);
+                transition: transform 1000ms ease-in-out;
+            }
         }
     }    
 }

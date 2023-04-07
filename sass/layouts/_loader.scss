@@ -3,11 +3,7 @@
  * active or not Loader
  * ----------------------------------------
  */
-.loader {
-  &__container {
-  display: none;
-  }
-}
+
 /*
  * ----------------------------------------
  * styled Loader
@@ -19,8 +15,8 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    -webkit-animation: loader__styled 3s ease-in-out 1s infinite alternate backwards;
-    animation: loader__styled 3s ease-in-out 1s infinite alternate backwards;
+    -webkit-animation: loader__styled 3s ease-in-out 1s 3 alternate forwards;
+    animation: loader__styled 3s ease-in-out 1s 3 alternate forwards; 
 }
 /*
  * ----------------------------------------
