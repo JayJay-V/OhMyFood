@@ -15,7 +15,7 @@
  */
 /*
  * ----------------------------------------
- * Mobile only
+ * Responsive mode only
  * ----------------------------------------
  */
 /*
@@ -33,12 +33,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-@media screen and (min-width: 992px) {
-  body {
-    background-color: blue;
-  }
 }
 
 /*
@@ -134,7 +128,18 @@ p {
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
-  cursor: pointer; /* after for "Version Desktop" -> add :HOVER */
+  cursor: pointer;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+  /* after for "Version Desktop" -> add :HOVER */
+}
+@media screen and (min-width: 992px) {
+  .btn__mainstyled {
+    width: 20%;
+  }
 }
 .btn__mainstyled:active {
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -175,6 +180,10 @@ p {
  * active or not Loader
  * ----------------------------------------
  */
+.loader__container {
+  display: none;
+}
+
 /*
  * ----------------------------------------
  * styled Loader
@@ -295,6 +304,17 @@ body #loader {
 .functioning__container {
   height: 440px;
   padding-left: 5%;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .functioning__container {
+    height: 228px;
+    padding-left: 0%;
+  }
 }
 
 .restaurants__container {
@@ -303,6 +323,16 @@ body #loader {
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .restaurants__container {
+    height: 668px;
+  }
 }
 
 /*
@@ -344,18 +374,63 @@ body #loader {
 
 .functioning__title {
   margin-top: 48px;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .functioning__title {
+    padding-left: 11%;
+  }
 }
 .functioning__step {
   display: flex;
   flex-direction: column;
+  /*
+   * ----------------------------------------
+   * Responsive mode desktop
+   * ----------------------------------------
+   */
+}
+@media screen and (min-width: 992px) {
+  .functioning__step {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .restaurants__title {
   padding-top: 55px;
+  /*
+   * ----------------------------------------
+   * Responsive mode desktop
+   * ----------------------------------------
+   */
+}
+@media screen and (min-width: 992px) {
+  .restaurants__title {
+    padding-top: 30px;
+    padding-left: 6%;
+  }
 }
 .restaurants__card {
   display: flex;
   flex-direction: column;
+  /*
+   * ----------------------------------------
+   * Responsive mode desktop
+   * ----------------------------------------
+   */
+}
+@media screen and (min-width: 992px) {
+  .restaurants__card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+  }
 }
 
 /*
@@ -503,6 +578,19 @@ body #loader {
   border-radius: 20px;
   background-color: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+  /*
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .step {
+    width: 25%;
+  }
 }
 .step:active {
   background-color: #F5EDFF;
@@ -548,6 +636,17 @@ body #loader {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 40%;
+    margin-bottom: 40px;
+  }
 }
 .card__panel {
   display: flex;
@@ -561,6 +660,17 @@ body #loader {
   border-radius: 2px;
   background: #99E2D0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .card__panel {
+    margin-left: 30%;
+    right: auto;
+  }
 }
 .card__panel p {
   color: #008766;

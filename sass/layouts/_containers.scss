@@ -39,8 +39,17 @@
 }
 .functioning {
     &__container {
-    height: 440px;
-    padding-left: 5%;
+        height: 440px;
+        padding-left: 5%;
+        /*
+        * ----------------------------------------
+        * Responsive mode desktop
+        * ----------------------------------------
+        */
+        @include desktop-only {
+            height: 228px;
+            padding-left: 0%;
+        }
     }
 }
 .restaurants {
@@ -50,6 +59,14 @@
     display: flex;
     flex-direction: column;
     background-color: $greylight;
+        /*
+        * ----------------------------------------
+        * Responsive mode desktop
+        * ----------------------------------------
+        */
+        @include desktop-only {
+            height: 668px;
+        }
     }
 }
 /*

@@ -13,6 +13,17 @@
     border-radius: 20px;
     background-color: $greylight;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    /*
+    * ----------------------------------------
+    * Responsive mode desktop
+    * ----------------------------------------
+    */
+    @include desktop-only {
+        width: 25%;
+    }
+    /*
+    * ----------------------------------------
+    */
     &:active {
         background-color: $primarylight; 
         .fa-solid {
