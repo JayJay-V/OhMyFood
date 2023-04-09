@@ -8,3 +8,11 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body {
+    @include mobile-only
+}
+body {
+    @include desktop-only {
+        background-color: blue;
+    }
+}
