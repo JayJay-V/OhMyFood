@@ -47,6 +47,14 @@
 .restaurants {
     &__title {
         padding-top: 55px;
+        /*
+         * ----------------------------------------
+         * Responsive mode desktop
+         * ----------------------------------------
+         */
+         @include desktop-only {
+            padding-left: 11%;
+        }
     }
     &__card {
         display: flex;
@@ -61,6 +69,7 @@
             flex-wrap: wrap;
             gap: 7%;
             justify-content: center;
+            padding-left: 4%;
         }
     }
     
