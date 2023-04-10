@@ -80,6 +80,25 @@ p {
   font-size: 17px;
 }
 
+.endpage__title {
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+  /*
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .endpage__title {
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    right: 5%;
+    margin-top: 35px;
+  }
+}
 .endpage__title p {
   font-family: "Shrikhand", sans-serif;
   font-size: 18px;
@@ -312,7 +331,7 @@ body #loader {
 }
 @media screen and (min-width: 992px) {
   .functioning__container {
-    height: 228px;
+    height: 180px;
     padding-left: 0%;
   }
 }
@@ -331,7 +350,7 @@ body #loader {
 }
 @media screen and (min-width: 992px) {
   .restaurants__container {
-    height: 668px;
+    height: 700px;
   }
 }
 
@@ -344,13 +363,35 @@ body #loader {
   background-color: #F7F7F7;
   border-radius: 40px 40px 0px 0px;
   position: relative;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
   height: 1115px;
+}
+@media screen and (min-width: 992px) {
+  .menu__container {
+    width: 74%;
+    margin-left: 13%;
+  }
 }
 .menu__highcontainer {
   background-color: #F7F7F7;
   border-radius: 40px 40px 0px 0px;
   position: relative;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
   height: 1200px;
+}
+@media screen and (min-width: 992px) {
+  .menu__highcontainer {
+    width: 74%;
+    margin-left: 13%;
+  }
 }
 
 /*
@@ -403,17 +444,6 @@ body #loader {
 
 .restaurants__title {
   padding-top: 55px;
-  /*
-   * ----------------------------------------
-   * Responsive mode desktop
-   * ----------------------------------------
-   */
-}
-@media screen and (min-width: 992px) {
-  .restaurants__title {
-    padding-top: 30px;
-    padding-left: 6%;
-  }
 }
 .restaurants__card {
   display: flex;
@@ -447,6 +477,16 @@ body #loader {
 }
 .menu__space {
   padding-left: 3%;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .menu__space {
+    margin-left: 17%;
+  }
 }
 .menu__like {
   display: flex;
@@ -476,10 +516,18 @@ body #loader {
   overflow: hidden;
   transition: transform 330ms ease-in-out;
   /*
-  * ----------------------------------------
-  * Animation Box
+   * ----------------------------------------
+   * Responsive mode desktop
+   * ----------------------------------------
+   */
+  /*
   * ----------------------------------------
   */
+}
+@media screen and (min-width: 992px) {
+  .menu__choice {
+    width: 75%;
+  }
 }
 .menu__choice:hover .box {
   transform: translate(0%, 0);
@@ -530,6 +578,16 @@ body #loader {
 .background .img {
   width: 100%;
   height: 275px;
+  /*
+   * ----------------------------------------
+   * Responsive mode desktop
+   * ----------------------------------------
+   */
+}
+@media screen and (min-width: 992px) {
+  .background .img {
+    height: 230px;
+  }
 }
 
 /*
@@ -542,6 +600,19 @@ body #loader {
   background-color: #353535;
   padding-top: 22px;
   padding-left: 5%;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+  /*
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .endpage {
+    height: 115px;
+  }
 }
 .endpage__about {
   color: #FFFFFF;
@@ -552,12 +623,44 @@ body #loader {
 .endpage ul {
   padding-top: 9px;
   padding-inline-start: initial;
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+  /*
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .endpage ul {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    margin-right: 22%;
+    margin-top: 23px;
+  }
 }
 .endpage li {
   display: flex;
   padding-top: 7px;
 }
-.endpage li i {
+.endpage .icon__two {
+  /*
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
+  /*
+  * ----------------------------------------
+  */
+}
+@media screen and (min-width: 992px) {
+  .endpage .icon__two {
+    padding-right: 40px;
+  }
+}
+.endpage .icon__two i {
   width: 24px;
   padding-right: 10px;
 }

@@ -18,5 +18,13 @@
     .img {
         width: 100%;
         height: 275px;
+        /*
+         * ----------------------------------------
+         * Responsive mode desktop
+         * ----------------------------------------
+         */
+         @include desktop-only {
+            height: 230px;
+        }
     }
 }

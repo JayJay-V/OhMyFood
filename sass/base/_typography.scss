@@ -38,10 +38,27 @@ p {
     font-size: 17px;
 }
 .endpage {
-    &__title p {
-        font-family: 'Shrikhand', sans-serif;
-        font-size: 18px;
-        color: $white;
+    &__title {
+         /*
+         * ----------------------------------------
+         * Responsive mode desktop
+         * ----------------------------------------
+         */
+         @include desktop-only {
+            display: flex;
+            position: absolute;
+            justify-content: end;
+            right: 5%;
+            margin-top: 35px;
+        } 
+        /*
+        * ----------------------------------------
+        */      
+        & p {
+            font-family: 'Shrikhand', sans-serif;
+            font-size: 18px;
+            color: $white;
+        }
     }
 }
 /*

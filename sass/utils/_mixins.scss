@@ -32,6 +32,15 @@
     background-color: $greylight;
     border-radius: 40px 40px 0px 0px;
     position: relative;
+    /*
+    * ----------------------------------------
+    * Responsive mode desktop
+    * ----------------------------------------
+    */
+    @include desktop-only {
+        width: 74%;
+        margin-left: 13%;
+    }
 }
 @mixin settings__menu__space {
     font-size: 16px;
