@@ -3,9 +3,9 @@
  * active or not Loader
  * ----------------------------------------
  */
-.loader__container {
+/* .loader__container {
   display: none;
-}
+} */
 /*
  * ----------------------------------------
  * styled Loader
@@ -18,7 +18,8 @@
     width: 100%;
     height: 100%;
     background-color: $greylight;
-    animation: loader__styled 3s ease-in-out 1s alternate forwards; 
+    animation: loader__styled 3s ease-in-out 1s infinite forwards;
+    
 }
 /*
  * ----------------------------------------
@@ -68,7 +69,6 @@
       width: 100%;
       height: 100%;
   }
-
   /* FIN */
   100% {
       
@@ -76,9 +76,12 @@
       width: 0%;
       height: 0%;
   }
-  
-
 }
+
+  @keyframes hide {
+    0% { opacity: 1; }
+    100% { opacity: 0; z-index: -999;}
+  }
 /*@-webkit-keyframes loader__styled {
     0% {
               

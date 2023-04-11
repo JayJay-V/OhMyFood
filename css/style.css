@@ -199,10 +199,9 @@ p {
  * active or not Loader
  * ----------------------------------------
  */
-.loader__container {
+/* .loader__container {
   display: none;
-}
-
+} */
 /*
  * ----------------------------------------
  * styled Loader
@@ -215,7 +214,7 @@ p {
   width: 100%;
   height: 100%;
   background-color: #F7F7F7;
-  animation: loader__styled 3s ease-in-out 1s alternate forwards;
+  animation: loader__styled 3s ease-in-out 1s infinite forwards;
 }
 
 /*
@@ -267,6 +266,15 @@ p {
     opacity: 0;
     width: 0%;
     height: 0%;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -999;
   }
 }
 /*@-webkit-keyframes loader__styled {
@@ -340,6 +348,7 @@ body #loader {
   width: 100%;
   z-index: 999;
   height: 100%;
+  animation: hide 1s linear 2s 1 normal forwards;
 }
 
 /*
@@ -628,6 +637,7 @@ body #loader {
 .card img {
   width: 100%;
   height: 175px;
+  object-fit: cover;
 }
 
 /*
@@ -638,6 +648,7 @@ body #loader {
 .background {
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 .background .img {
   width: 100%;
