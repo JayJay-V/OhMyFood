@@ -555,6 +555,11 @@ body #loader {
   justify-content: space-between;
   align-items: end;
 }
+.menu__price {
+  transform: translate(150%, 0);
+  transition: transform 1000ms;
+  padding-right: 10px;
+}
 .menu__choice {
   display: flex;
   justify-content: flex-end;
@@ -583,6 +588,10 @@ body #loader {
   .menu__choice {
     width: 75%;
   }
+}
+.menu__choice:hover .menu__price {
+  transform: translate(0%, 0);
+  transition: transform 1000ms;
 }
 .menu__choice:hover .box {
   transform: translate(0%, 0);

@@ -110,6 +110,11 @@
         justify-content: space-between;
         align-items: end;
     }
+    &__price {
+        transform: translate(150%, 0);
+        transition: transform 1000ms;
+        padding-right: 10px;
+    }
     &__choice {
         @include settings__menu__choice;
         transition: transform 330ms ease-in-out;
@@ -124,6 +129,10 @@
         /*
         * ----------------------------------------
         */
+        &:hover .menu__price {
+            transform: translate(0%, 0);
+            transition: transform 1000ms;
+        }
         &:hover .box {
             transform: translate(0%, 0);
             transition: transform 1000ms;
