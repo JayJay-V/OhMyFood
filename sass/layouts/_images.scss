@@ -26,7 +26,9 @@
          * ----------------------------------------
          */
          @include desktop-only {
-            height: 230px;
+            height: 956px;
+            position: relative;
+            bottom: 420px;
         }
     }
 }

@@ -319,6 +319,9 @@ body #loader {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background-color: white;
+  z-index: 1;
 }
 .homepage .logo_omf_top {
   width: 162px;
@@ -334,6 +337,7 @@ body #loader {
   position: absolute;
   left: 6%;
   top: 23px;
+  z-index: 2;
 }
 
 /*
@@ -428,7 +432,9 @@ body #loader {
 @media screen and (min-width: 992px) {
   .menu__container {
     width: 74%;
+    position: relative;
     margin-left: 13%;
+    bottom: 30px;
   }
 }
 .menu__highcontainer {
@@ -445,7 +451,9 @@ body #loader {
 @media screen and (min-width: 992px) {
   .menu__highcontainer {
     width: 74%;
+    position: relative;
     margin-left: 13%;
+    bottom: 30px;
   }
 }
 
@@ -527,11 +535,21 @@ body #loader {
     justify-content: center;
     padding-left: 4%;
   }
-} /*
+}
+
+/*
  * ----------------------------------------
  * Other Pages
  * ----------------------------------------
  */
+@media screen and (min-width: 992px) {
+  .menu__background {
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    top: 30px;
+  }
+}
 .menu__title {
   padding-top: 32px;
   display: flex;
@@ -661,7 +679,9 @@ body #loader {
 }
 @media screen and (min-width: 992px) {
   .background .img {
-    height: 230px;
+    height: 956px;
+    position: relative;
+    bottom: 420px;
   }
 }
 
@@ -687,6 +707,7 @@ body #loader {
 @media screen and (min-width: 992px) {
   .endpage {
     height: 115px;
+    position: relative;
   }
 }
 .endpage__about {

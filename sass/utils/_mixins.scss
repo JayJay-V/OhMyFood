@@ -39,7 +39,9 @@
     */
     @include desktop-only {
         width: 74%;
+        position: relative;
         margin-left: 13%;
+        bottom: 30px;
     }
 }
 @mixin settings__menu__space {

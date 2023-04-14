@@ -80,6 +80,14 @@
  * ----------------------------------------
  */
 .menu {
+    &__background {
+        @include desktop-only {
+            background-color: red;
+            position: relative;
+            z-index: 0;
+            top: 30px;
+        }
+    }
     &__title {
         padding-top: 32px;
         display: flex;
