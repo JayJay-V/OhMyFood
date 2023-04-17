@@ -514,6 +514,13 @@ body #loader {
  * Other Pages
  * ----------------------------------------
  */
+.menu {
+  /*
+       * ----------------------------------------
+       * Responsive mode desktop
+       * ----------------------------------------
+       */
+}
 @media screen and (min-width: 992px) {
   .menu__background {
     background-color: #FFFFFF;
@@ -521,6 +528,11 @@ body #loader {
     z-index: 0;
     top: 30px;
   }
+}
+.menu__title {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 .menu__space {
   padding-left: 3%;
@@ -539,6 +551,7 @@ body #loader {
   display: flex;
   align-items: center;
   font-size: 22px;
+  padding-left: 25px;
 }
 .menu__containt {
   width: 100%;
@@ -593,6 +606,27 @@ body #loader {
   transform: rotate(-1turn);
   transition: transform 1000ms ease-in-out;
 }
+@media screen and (min-width: 992px) {
+  .menu__delay__one {
+    animation-duration: 3s;
+    animation-name: glissement;
+    animation-delay: 0.5s;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__delay__two {
+    animation-duration: 3s;
+    animation-name: glissement;
+    animation-delay: 0.7s;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__delay__three {
+    animation-duration: 3s;
+    animation-name: glissement;
+    animation-delay: 0.9s;
+  }
+}
 
 .box {
   height: 70px;
@@ -610,6 +644,17 @@ body #loader {
 .fa-circle-check {
   color: white;
   font-size: 22px;
+}
+
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 /*
  * ----------------------------------------

@@ -88,12 +88,10 @@
             top: 30px;
         }
     }
-    &__title {
-        padding-top: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 10%;
+    &__title {      
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
     }
     &__space {
         padding-left: 3%;
@@ -110,6 +108,7 @@
         display: flex;
         align-items: center;
         font-size: 22px;
+        padding-left: 25px;
     }
     &__containt {
         width: 100%;
@@ -150,10 +149,33 @@
             }
         }
     }
-    .menu__delay__one {
-        animation-duration: 3s;
-        animation-name: glissement;
-        animation-delay: 0.5s;
+    /*
+         * ----------------------------------------
+         * Responsive mode desktop
+         * ----------------------------------------
+         */
+    &__delay{
+        &__one {
+            @include desktop-only {
+                animation-duration: 3s;
+                animation-name: glissement;
+                animation-delay: 0.5s;
+            }
+        }
+        &__two {
+            @include desktop-only {
+                animation-duration: 3s;
+                animation-name: glissement;
+                animation-delay: 0.7s;
+            }
+        }
+        &__three {
+            @include desktop-only {
+                animation-duration: 3s;
+                animation-name: glissement;
+                animation-delay: 0.9s;
+            }
+        }
     }
 }
 .box {
