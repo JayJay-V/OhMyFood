@@ -522,24 +522,6 @@ body #loader {
     top: 30px;
   }
 }
-.menu__delay__one {
-  animation-duration: 3s;
-  animation-name: glissement;
-  animation-delay: 0.5s;
-  animation-iteration-count: infinite;
-}
-.menu__delay__two {
-  animation-duration: 3s;
-  animation-name: glissement;
-  animation-delay: 0.7s;
-  animation-iteration-count: infinite;
-}
-.menu__delay__three {
-  animation-duration: 3s;
-  animation-name: glissement;
-  animation-delay: 0.9s;
-  animation-iteration-count: infinite;
-}
 .menu__title {
   padding-top: 32px;
   display: flex;
@@ -618,6 +600,11 @@ body #loader {
   transform: rotate(-1turn);
   transition: transform 1000ms ease-in-out;
 }
+.menu .menu__delay__one {
+  animation-duration: 3s;
+  animation-name: glissement;
+  animation-delay: 0.5s;
+}
 
 .box {
   height: 70px;
@@ -640,7 +627,7 @@ body #loader {
 @keyframes glissement {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 100%;
   }
   to {
     margin-left: 0%;

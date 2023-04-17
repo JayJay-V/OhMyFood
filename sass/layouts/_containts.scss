@@ -149,7 +149,12 @@
                 transition: transform 1000ms ease-in-out;
             }
         }
-    }    
+    }
+    .menu__delay__one {
+        animation-duration: 3s;
+        animation-name: glissement;
+        animation-delay: 0.5s;
+    }
 }
 .box {
     height: 70px;
@@ -166,4 +171,14 @@
 .fa-circle-check {
     color: white;
     font-size: 22px;
+}
+@keyframes glissement {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
 }
