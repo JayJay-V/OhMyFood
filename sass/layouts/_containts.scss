@@ -82,11 +82,29 @@
 .menu {
     &__background {
         @include desktop-only {
-            background-color: red;
+            background-color: $white;
             position: relative;
             z-index: 0;
             top: 30px;
         }
+    }
+    &__delay__one {
+        animation-duration: 3s;
+        animation-name: glissement;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+    }
+    &__delay__two {
+        animation-duration: 3s;
+        animation-name: glissement;
+        animation-delay: 0.7s;
+        animation-iteration-count: infinite;
+    }
+    &__delay__three {
+        animation-duration: 3s;
+        animation-name: glissement;
+        animation-delay: 0.9s;
+        animation-iteration-count: infinite;
     }
     &__title {
         padding-top: 32px;
@@ -167,3 +185,14 @@
     color: white;
     font-size: 22px;
 }
+@keyframes glissement {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
