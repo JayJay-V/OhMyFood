@@ -522,13 +522,6 @@ body #loader {
     top: 30px;
   }
 }
-.menu__title {
-  padding-top: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10%;
-}
 .menu__space {
   padding-left: 3%;
   /*
@@ -600,11 +593,6 @@ body #loader {
   transform: rotate(-1turn);
   transition: transform 1000ms ease-in-out;
 }
-.menu .menu__delay__one {
-  animation-duration: 3s;
-  animation-name: glissement;
-  animation-delay: 0.5s;
-}
 
 .box {
   height: 70px;
@@ -622,17 +610,6 @@ body #loader {
 .fa-circle-check {
   color: white;
   font-size: 22px;
-}
-
-@keyframes glissement {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
 /*
  * ----------------------------------------
