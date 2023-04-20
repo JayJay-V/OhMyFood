@@ -1,13 +1,5 @@
 /*
  * ----------------------------------------
- * active or not Loader
- * ----------------------------------------
- */
-/* .loader__container {
-  display: none;
-} */
-/*
- * ----------------------------------------
  * styled Loader
  * ----------------------------------------
  */
@@ -77,12 +69,15 @@
       height: 0%;
   }
 }
-
-  @keyframes hide {
-    0% { opacity: 1; }
-    100% { opacity: 0; z-index: -999;}
-  }
-
-body #loader {
+@keyframes hide {
+  0% { opacity: 1; }
+  100% { opacity: 0; z-index: -999;}
+}
+body {
   animation: disable-scroll 3000ms;
+}
+@keyframes disable-scroll {
+  0% { overflow: hidden; height: 100%;} 
+  99% { overflow: hidden; height: 100%;}
+  100% { overflow: visible; height: auto;}
 }

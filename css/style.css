@@ -153,7 +153,6 @@ p {
   * Responsive mode desktop
   * ----------------------------------------
   */
-  /* after for "Version Desktop" -> add :HOVER */
 }
 @media screen and (min-width: 992px) {
   .btn__mainstyled {
@@ -194,14 +193,6 @@ p {
 }
 
 /* LAYOUTS */
-/*
- * ----------------------------------------
- * active or not Loader
- * ----------------------------------------
- */
-/* .loader__container {
-  display: none;
-} */
 /*
  * ----------------------------------------
  * styled Loader
@@ -277,10 +268,24 @@ p {
     z-index: -999;
   }
 }
-body #loader {
+body {
   animation: disable-scroll 3000ms;
 }
 
+@keyframes disable-scroll {
+  0% {
+    overflow: hidden;
+    height: 100%;
+  }
+  99% {
+    overflow: hidden;
+    height: 100%;
+  }
+  100% {
+    overflow: visible;
+    height: auto;
+  }
+}
 /*
  * ----------------------------------------
  * Homepage & Other Pages
@@ -516,10 +521,10 @@ body #loader {
  */
 .menu {
   /*
-       * ----------------------------------------
-       * Responsive mode desktop
-       * ----------------------------------------
-       */
+  * ----------------------------------------
+  * Responsive mode desktop
+  * ----------------------------------------
+  */
 }
 @media screen and (min-width: 992px) {
   .menu__background {
@@ -733,9 +738,6 @@ body #loader {
   * Responsive mode desktop
   * ----------------------------------------
   */
-  /*
-  * ----------------------------------------
-  */
 }
 @media screen and (min-width: 992px) {
   .endpage ul {
@@ -871,6 +873,9 @@ body #loader {
   /*
   * ----------------------------------------
   * Responsive mode desktop
+  * ----------------------------------------
+  */
+  /*
   * ----------------------------------------
   */
 }
