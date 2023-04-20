@@ -46,6 +46,12 @@
         display: flex;
         padding-top: 7px;
         }
+        .icon__one {
+            i {
+                width: 24px;
+                padding-right: 10px;
+            }
+        }
         .icon__two {
             /*
             * ----------------------------------------
@@ -54,13 +60,13 @@
             */
             @include desktop-only {
                 padding-right: 40px;
-        } 
-        /*
-        * ----------------------------------------
-        */ 
-        i {
-            width: 24px;
-            padding-right: 10px;
+            } 
+            /*
+            * ----------------------------------------
+            */ 
+            i {
+                width: 24px;
+                padding-right: 10px;
+            }
         }
-    }
 }
