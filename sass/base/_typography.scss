@@ -19,11 +19,14 @@ body {
     font-size: 16px;
 }
 a {
-    color: $white;
+    color: $black;
     text-decoration: none;
 }
 a:visited {
-    color: black;
+    color: $black;
+}
+.endpage__about a {
+    color: white;
 }
 h1 {
     font-size: 28px;
