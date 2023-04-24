@@ -20,8 +20,7 @@
  */
  @keyframes loader__styled {
   /* UNE FOIS */
-  0% {
-      
+  0% {   
       opacity: 1;
   }
   10% {
@@ -31,16 +30,14 @@
       letter-spacing: 1em;      
       opacity: 0.8;
   }
-  30% {
-      
+  30% { 
       opacity: 0.7;
   }
   40% {
     letter-spacing: 1em;
       opacity: 0.6;
   }
-  50% {
-      
+  50% { 
       opacity: 0.5;
   }
   60% {
@@ -49,7 +46,6 @@
   }
   70% {
       letter-spacing: 1em;
-      
       opacity: 0.3;
   }
   80% {
@@ -62,8 +58,7 @@
       height: 100%;
   }
   /* FIN */
-  100% {
-      
+  100% {     
       opacity: 0;
       width: 0%;
       height: 0%;
