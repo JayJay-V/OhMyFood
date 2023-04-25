@@ -155,25 +155,19 @@
     */
     &__delay{
         &__one {
-            @include desktop-only {
                 animation-duration: 3s;
                 animation-name: glissement;
                 animation-delay: 0.5s;
-            }
         }
         &__two {
-            @include desktop-only {
                 animation-duration: 3s;
                 animation-name: glissement;
                 animation-delay: 0.7s;
-            }
         }
         &__three {
-            @include desktop-only {
                 animation-duration: 3s;
                 animation-name: glissement;
-                animation-delay: 0.9s;
-            }
+                animation-delay: 0.9s;           
         }
     }
 }
