@@ -117,10 +117,39 @@
         justify-content: space-between;
         align-items: end;
     }
+    &__text {
+        display: flex;
+        padding: 10px;
+        min-width: 80%;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        & h3, p {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+        }
+    }
+    &__right {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding-left: 25px;
+    }
     &__price {
-        transform: translate(150%, 0);
+        width: 50%;
+        background-color: white;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 15px;
+        transform: translate(100%, 0);
         transition: transform 1000ms;
-        padding-right: 10px;
     }
     &__choice {
         @include settings__menu__choice;
@@ -174,14 +203,14 @@
 }
 .box {
     height: 70px;
-    width: 60px;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0px 15px 15px 0px;
     background: #99E2D0;
     position: relative;
-    transform: translate(100%, 0);
+    transform: translate(110%, 0);
     transition: transform 1000ms;
 }
 .fa-circle-check {
