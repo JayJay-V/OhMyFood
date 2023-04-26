@@ -55,10 +55,9 @@
 }
 @mixin settings__menu__choice {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    flex-wrap: nowrap;
-    width: 94%;
+    justify-content: space-between;
+    width: 96%;
     height: 70px;
     margin-top: 10px;
     background: $white;

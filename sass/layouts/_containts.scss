@@ -120,11 +120,12 @@
     &__text {
         display: flex;
         padding: 10px;
-        min-width: 80%;
+        min-width: 70%;
         background-color: white;
         flex-direction: column;
         justify-content: center;
         height: 100%;
+        align-items: center;
         & h3, p {
             width: 100%;
             overflow: hidden;
@@ -133,12 +134,11 @@
         }
     }
     &__right {
-        width: 20%;
+        max-width: 30%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         height: 100%;
-        padding-left: 25px;
     }
     &__price {
         width: 50%;
@@ -147,7 +147,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        padding: 15px;
+        padding-bottom: 15px;
         transform: translate(100%, 0);
         transition: transform 1000ms;
     }
